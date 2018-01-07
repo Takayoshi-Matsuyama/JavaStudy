@@ -7,6 +7,8 @@ public class DataStructure {
         int[] arrayVar2 = new int[] {0, 1, 2, 3, 4};
         int[] arrayVar3 = {0, 1, 2, 3, 4};
 
+        int[][] twoDimensionArrayVar = new int[][] {{0, 1, 2, 3, 4}, {5, 6, 7, 8, 9}};
+
         // Java VMの動作
         // ・int型の要素を5個分のメモリ領域を確保
         // ・int型の配列変数arrayVar1のメモリ領域を確保
