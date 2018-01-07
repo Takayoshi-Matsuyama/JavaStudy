@@ -57,16 +57,6 @@ public class Main {
         }
     }
 
-    private static void whileStatement(int x) {
-        while (x < 10) {
-            x++;
-        }
-
-        do {
-            x++;
-        } while (x < 20);
-    }
-
     private static void switchStatement(int x) {
         switch (x) {
             case 0:
@@ -77,6 +67,22 @@ public class Main {
                 break;
             default:
                 System.out.println("(x != 0) && (x != 1)");
+        }
+    }
+
+    private static void whileStatement(int x) {
+        while (x < 10) {
+            x++;
+        }
+
+        do {
+            x++;
+        } while (x < 20);
+    }
+
+    private static void forStatement() {
+        for (int i = 0; i < 10; i++) {
+            System.out.format("%d%n", i);
         }
     }
 
