@@ -47,11 +47,32 @@ public class Main {
         } else {
             System.out.println("x != 0");
         }
+
+        if (x==0) {
+            System.out.println("x == 0");
+        } else if (x > 0) {
+            System.out.println("x > 0");
+        } else {
+            System.out.println("x < 0");
+        }
     }
 
     private static void whileStatement(int x) {
         while (x < 10) {
             x++;
+        }
+    }
+
+    private static void switchStatement(int x) {
+        switch (x) {
+            case 0:
+                System.out.println("x == 0");
+                break;
+            case 1:
+                System.out.println("x == 1");
+                break;
+            default:
+                System.out.println("(x != 0) && (x != 1)");
         }
     }
 
@@ -61,6 +82,20 @@ public class Main {
 
             // Javaでは、文字列の比較は"=="ではできない。
             // String.equals()メソッドを使う。
+        }
+    }
+
+    private static void minimalEvaluation(int x, int y) {
+        // 第1条件(x == 0)がfalseの場合、第2条件(y == 0)は評価されない。
+        // 第1条件の結果で条件式全体がfalseになることが確定する。
+        if ((x == 0) && (y ==0)) {
+            System.out.println("(x == 0) && (y ==0)");
+        }
+
+        // 第1条件(x == 0)がtrueの場合、第2条件(y == 0)は評価されない。
+        // 第1条件の結果で、条件式全体がtrueになることが確定する。
+        if ((x == 0) || (y ==0)) {
+            System.out.println("(x == 0) && (y ==0)");
         }
     }
 }
