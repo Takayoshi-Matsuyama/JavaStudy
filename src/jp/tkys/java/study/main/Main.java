@@ -36,4 +36,8 @@ public class Main {
         char charVar = 'Y';
         String stringVar = "Hello";
     }
+
+    private static void parse() {
+        int number = Integer.parseInt("123");
+    }
 }
