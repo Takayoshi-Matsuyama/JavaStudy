@@ -61,6 +61,10 @@ public class Main {
         while (x < 10) {
             x++;
         }
+
+        do {
+            x++;
+        } while (x < 20);
     }
 
     private static void switchStatement(int x) {
