@@ -92,6 +92,11 @@ public class Main {
                 break;      // 繰り返しそのものを中断
             }
         }
+
+        int[] arrayVar = {0, 1, 2, 3, 4};
+        for (int value : arrayVar) {        // 拡張for文
+            System.out.println(value);
+        }
     }
 
     private static void infiniteLoop() {
