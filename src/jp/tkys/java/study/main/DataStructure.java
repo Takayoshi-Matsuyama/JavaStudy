@@ -12,4 +12,16 @@ public class DataStructure {
         // ・int型の配列変数arrayVar1のメモリ領域を確保
         // ・arrayVar1に配列先頭要素のアドレスを入れる
     }
+
+    private static void disposeArray(int x) {
+        if (x > 0) {
+            int[] arrayVar = new int[] {0, 1, 2, 3, 4};
+        }
+
+        // 配列変数arrayVarはブロックの最後で消滅する
+        // newで確保した配列要素はブロックは消滅せず生き残る▶ガベージコレクションで回収、破棄される
+
+        int[] arrayVar = new int[] {0, 1, 2, 3, 4};
+        arrayVar = null;    // 参照を切る(わざと参照されないようにする)
+    }
 }
