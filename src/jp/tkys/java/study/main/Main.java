@@ -8,10 +8,10 @@ public class Main {
 
     private static void dataType() {
         // 整数
-        long longVar;
-        int intVar;
-        short shortVar;
-        byte byteVar;
+        long longVar;       // 8byte (64bit) -9,223,372,036,854,775,808～9,223,372,036,854,775,807
+        int intVar;         // 4byte (32bit) -2,147,483,648～2,147,483,647
+        short shortVar;     // 2byte (16bit) -32,768～32,767
+        byte byteVar;       // 1byte (8bit)  -128～127
 
         // 小数
         double doubleVar;
