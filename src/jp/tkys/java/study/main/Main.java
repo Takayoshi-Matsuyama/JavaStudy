@@ -94,6 +94,16 @@ public class Main {
         }
     }
 
+    private static void infiniteLoop() {
+        while (true) {
+            break;
+        }
+
+        for (;;) {
+            break;
+        }
+    }
+
     private static void compareStrings(String x) {
         if (x.equals("ABC")) {
             System.out.println("x == ABC");
