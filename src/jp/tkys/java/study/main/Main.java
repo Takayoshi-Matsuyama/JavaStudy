@@ -26,4 +26,14 @@ public class Main {
         // 文字列
         String stringVar;
     }
+
+    private static void literal() {
+        int intVar = 30;
+        long longVar = 300000L;
+        double doubleVar = 30.5;
+        float floatVar = 30.5F;
+        boolean boolVar = true;
+        char charVar = 'Y';
+        String stringVar = "Hello";
+    }
 }
