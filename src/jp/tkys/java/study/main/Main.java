@@ -4,6 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 	    System.out.println("Hello World");
+
+	    // 1行の文字列入力を受ける
+        System.out.print(">");
+	    String inputLineString = new java.util.Scanner(System.in).nextLine();
+        System.out.println(inputLineString);
     }
 
     private static void dataType() {
