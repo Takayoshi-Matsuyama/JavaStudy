@@ -1,4 +1,4 @@
-package jp.tkys.java.study.main;
+package tech.tkys.java.study.main;
 
 public class Method {
 

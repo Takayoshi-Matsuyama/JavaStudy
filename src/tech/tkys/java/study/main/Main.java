@@ -1,10 +1,10 @@
-package jp.tkys.java.study.main;    // 推奨パッケージ名：保有するインターネットドメインを前後逆順にしたものから開始する
+package tech.tkys.java.study.main;    // 推奨パッケージ名：保有するインターネットドメインを前後逆順にしたものから開始する
 
 public class Main {
 
     /**
      * Javaプログラムを実行するには、mainメソッドが含まれているクラスの完全限定クラス名(Full Qualified Class Name; FQCN)を指定する必要がある
-     * $java jp.tkys.java.study.main.Main
+     * $java Main
      * 注：ディレクトリのツリー構造を名前空間に合わせておく
      * 注：カレントディレクトリを先頭ディレクトリの直上("jp"の直上)に設定しておく
      * @param args
