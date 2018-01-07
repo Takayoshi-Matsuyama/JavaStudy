@@ -83,6 +83,14 @@ public class Main {
     private static void forStatement() {
         for (int i = 0; i < 10; i++) {
             System.out.format("%d%n", i);
+
+            if (i == 5) {
+                continue;   // 今の周を中断し、次の周へ
+            }
+
+            if (i == 9) {
+                break;      // 繰り返しそのものを中断
+            }
         }
     }
 
