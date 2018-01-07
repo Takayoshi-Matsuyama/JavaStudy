@@ -40,4 +40,27 @@ public class Main {
     private static void parse() {
         int number = Integer.parseInt("123");
     }
+
+    private static void ifStatement(int x) {
+        if (x == 0) {
+            System.out.println("x == 0");
+        } else {
+            System.out.println("x != 0");
+        }
+    }
+
+    private static void whileStatement(int x) {
+        while (x < 10) {
+            x++;
+        }
+    }
+
+    private static void compareStrings(String x) {
+        if (x.equals("ABC")) {
+            System.out.println("x == ABC");
+
+            // Javaでは、文字列の比較は"=="ではできない。
+            // String.equals()メソッドを使う。
+        }
+    }
 }
