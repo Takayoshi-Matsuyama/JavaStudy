@@ -2,6 +2,13 @@ package jp.tkys.java.study.main;
 
 public class Main {
 
+    /**
+     * Javaプログラムを実行するには、mainメソッドが含まれているクラスの正式名を指定する必要がある
+     * $java jp.tkys.java.study.main.Main
+     * 注：ディレクトリのツリー構造を名前空間に合わせておく
+     * 注：カレントディレクトリを先頭ディレクトリの直上("jp"の直上)に設定しておく
+     * @param args
+     */
     public static void main(String[] args) {
 	    System.out.println("Hello World");
 
