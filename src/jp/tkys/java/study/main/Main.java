@@ -1,4 +1,4 @@
-package jp.tkys.java.study.main;
+package jp.tkys.java.study.main;    // 推奨パッケージ名：保有するインターネットドメインを前後逆順にしたものから開始する
 
 public class Main {
 
