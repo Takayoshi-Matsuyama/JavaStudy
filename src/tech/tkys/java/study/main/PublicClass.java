@@ -43,12 +43,46 @@ class PackagePrivateClass {         // アクセス修飾子を付けない
 
 }
 
-class BaseClass {
+interface SampleInterface {
+    void methodX();
+}
+
+interface ExtendedSampleInterface extends SampleInterface {
+    void methodY();
+}
+
+interface AnotherInterface {
+    default void methodZ() {
+        // デフォルト実装
+        // !!多重継承に伴う、デフォルト実装の衝突を招くことがある!!
+    }
+}
+
+class SampleImplementationClass implements ExtendedSampleInterface, AnotherInterface {
+    public void methodX() {
+    }
+
+    public void methodY() {
+    }
+
+    public void methodZ() {
+    }
+}
+
+abstract class AbstractClass {
+    public abstract void methodX();
+}
+
+class BaseClass extends AbstractClass {
 
     public BaseClass() {
     }
 
     public void methodA() {
+    }
+
+    public void methodX() {
+
     }
 
     public final void finalizedMethod() {
