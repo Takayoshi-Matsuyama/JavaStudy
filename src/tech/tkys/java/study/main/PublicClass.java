@@ -1,6 +1,6 @@
 package tech.tkys.java.study.main;
 
-public class Class {
+public class PublicClass {
     private static int StaticFileld;
 
     public int publicField;
@@ -8,10 +8,10 @@ public class Class {
     private int privateField;
     int packagePrivateField;      // アクセス修飾子を付けない
 
-    public Class() {        // コンストラクタ
+    public PublicClass() {        // コンストラクタ
     }
 
-    public Class(int x) {   // コンストラクタ
+    public PublicClass(int x) {   // コンストラクタ
         this.privateField = x;
     }
 
@@ -29,4 +29,16 @@ public class Class {
 
     void packagePrivateMethod() {   // アクセス修飾子を付けない
     }
+
+    public int getPrivateField() {              // getterメソッド
+        return this.privateField;
+    }
+
+    public void setPrivateField(int value) {    // setterメソッド
+        this.privateField = value;
+    }
+}
+
+class PackagePrivateClass {
+
 }
