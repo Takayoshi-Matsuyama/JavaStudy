@@ -15,6 +15,12 @@ public final class Main {   // finalが付くと継承不可能
     public static void main(String[] args) {
 	    System.out.println("Hello World");
 
+	    String a1 = "AAA";
+	    String a2 = "AAA";
+
+	    System.out.printf("等値の判定(a1 == a2): %s%n", a1 == a2);               // 等値(==): 同じアドレス
+	    System.out.printf("等価の判定(a1.equals(a2)): %s%n", a1.equals(a2));     // 等価(equals): 同じ内容
+
 	    // 1行の文字列入力を受ける
         System.out.print(">");
 	    String inputLineString = new java.util.Scanner(System.in).nextLine();
