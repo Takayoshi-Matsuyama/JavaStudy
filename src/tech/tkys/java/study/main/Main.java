@@ -1,4 +1,6 @@
-package tech.tkys.java.study.main;    // 推奨パッケージ名：保有するインターネットドメインを前後逆順にしたものから開始する
+package tech.tkys.java.study.main;    // 推奨パッケージ名：保有するインターネットドメインを前後逆順にしたものから開始する。
+
+// java.langパッケージは自動的にインポートされる。
 
 public class Main {
 
