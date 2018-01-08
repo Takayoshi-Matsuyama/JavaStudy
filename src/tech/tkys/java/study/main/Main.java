@@ -62,6 +62,16 @@ public final class Main {   // finalが付くと継承不可能
         int number = Integer.parseInt("123");
     }
 
+    private static void useBoxing() {
+        // 明示的な変換
+        Integer boxedValue = Integer.valueOf(99);
+        int unboxedValue = boxedValue.intValue();
+
+        // 自動的な変換
+        Integer boxedValue2 = 99;
+        int unboxedValue2 = boxedValue2;
+    }
+
     private static void ifStatement(int x) {
         if (x == 0) {
             System.out.println("x == 0");
