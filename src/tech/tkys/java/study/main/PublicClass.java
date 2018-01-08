@@ -107,3 +107,5 @@ class ExtendedClass extends BaseClass {
 //    public void finalizedMethod()  {
 //    }
 }
+
+class SimpleClass extends Object {} // 全てのクラスはObjectクラスから派生する
