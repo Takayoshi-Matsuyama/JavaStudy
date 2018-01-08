@@ -42,3 +42,30 @@ public class PublicClass {
 class PackagePrivateClass {         // アクセス修飾子を付けない
 
 }
+
+class BaseClass {
+
+    public BaseClass() {
+    }
+
+    public void methodA() {
+    }
+
+    public final void finalizedMethod() {
+    }
+}
+
+class ExtendedClass extends BaseClass {
+
+    public ExtendedClass() {
+        super();                // 基底クラスのコンストラクタを実行(この行を記述しない場合、コンパイラにより自動挿入される)
+    }
+
+    public void methodA() {     // オーバーライド
+        super.methodA();        // 基底クラスのメソッドを呼ぶ
+    }
+
+    // finalが付与されたメソッドはオーバーライド不可
+//    public void finalizedMethod()  {
+//    }
+}

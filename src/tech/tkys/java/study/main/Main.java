@@ -2,7 +2,7 @@ package tech.tkys.java.study.main;    // 推奨パッケージ名：保有する
 
 // java.langパッケージは自動的にインポートされる。
 
-public class Main {
+public final class Main {   // finalが付くと継承不可能
 
     /**
      * Javaプログラムを実行するには、mainメソッドが含まれているクラスの完全限定クラス名(Full Qualified Class Name; FQCN)を指定する必要がある。
