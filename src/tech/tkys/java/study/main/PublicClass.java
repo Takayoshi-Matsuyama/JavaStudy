@@ -37,6 +37,10 @@ public class PublicClass {
     public void setPrivateField(int value) {    // setterメソッド
         this.privateField = value;
     }
+
+    private boolean checkInstance(SampleInterface sampleObject) {
+        return sampleObject instanceof SampleImplementationClass;   // インスタンスのチェック
+    }
 }
 
 class PackagePrivateClass {         // アクセス修飾子を付けない
