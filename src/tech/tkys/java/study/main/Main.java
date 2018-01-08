@@ -2,6 +2,8 @@ package tech.tkys.java.study.main;    // 推奨パッケージ名：保有する
 
 // java.langパッケージは自動的にインポートされる。
 
+import java.io.IOException;
+
 public final class Main {   // finalが付くと継承不可能
 
     /**
@@ -13,18 +15,35 @@ public final class Main {   // finalが付くと継承不可能
      * @param args
      */
     public static void main(String[] args) {
-	    System.out.println("Hello World");
+        try {
+            System.out.println("Hello World");
 
-	    String a1 = "AAA";
-	    String a2 = "AAA";
+            String a1 = "AAA";
+            String a2 = "AAA";
 
-	    System.out.printf("等値の判定(a1 == a2): %s%n", a1 == a2);               // 等値(==): 同じアドレス
-	    System.out.printf("等価の判定(a1.equals(a2)): %s%n", a1.equals(a2));     // 等価(equals): 同じ内容
+            System.out.printf("等値の判定(a1 == a2): %s%n", a1 == a2);               // 等値(==): 同じアドレス
+            System.out.printf("等価の判定(a1.equals(a2)): %s%n", a1.equals(a2));     // 等価(equals): 同じ内容
 
-	    // 1行の文字列入力を受ける
-        System.out.print(">");
-	    String inputLineString = new java.util.Scanner(System.in).nextLine();
-        System.out.println(inputLineString);
+            // 1行の文字列入力を受ける
+            System.out.print(">");
+            String inputLineString = new java.util.Scanner(System.in).nextLine();
+            System.out.println(inputLineString);
+        } catch (Exception e) {
+            // 例外処理
+            e.printStackTrace();
+        } finally {
+            // 必ず実行する処理
+        }
+    }
+
+    private static void processFiles() throws IOException {     // 例外のスロー宣言
+        // ファイル処理
+    }
+
+    private static void checkArgument(int parameter) {
+        if (parameter < 0) {
+            throw new IllegalArgumentException("parameter");
+        }
     }
 
     private static void dataType() {
