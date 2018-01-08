@@ -39,6 +39,6 @@ public class PublicClass {
     }
 }
 
-class PackagePrivateClass {
+class PackagePrivateClass {         // アクセス修飾子を付けない
 
 }
