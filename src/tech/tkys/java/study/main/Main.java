@@ -5,10 +5,11 @@ package tech.tkys.java.study.main;    // 推奨パッケージ名：保有する
 public class Main {
 
     /**
-     * Javaプログラムを実行するには、mainメソッドが含まれているクラスの完全限定クラス名(Full Qualified Class Name; FQCN)を指定する必要がある
-     * $java Main
-     * 注：ディレクトリのツリー構造を名前空間に合わせておく
-     * 注：カレントディレクトリを先頭ディレクトリの直上("jp"の直上)に設定しておく
+     * Javaプログラムを実行するには、mainメソッドが含まれているクラスの完全限定クラス名(Full Qualified Class Name; FQCN)を指定する必要がある。
+     * $java -cp /Users/takayoshi/IdeaProjects/JavaStudy/out/production/JavaStudy tech.tkys.java.study.main.Main
+     * 注：ディレクトリのツリー構造を名前空間に合わせておく。
+     * 注：-cpオプションでツリー構造先頭の直上("tech"の直上)のディレクトリを指定する。
+     *    または、カレントディレクトリをそこに設定しておく。
      * @param args
      */
     public static void main(String[] args) {
